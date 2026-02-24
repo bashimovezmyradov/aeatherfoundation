@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>References</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0f0f0f;
+    --card: #1b1b1b;
+    --border: #2a2a2a;
+    --accent: #d4af37;
+    --text-muted: #9a9a9a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+header p {
+    margin-top: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.hall-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 3rem 8%;
+}
+.member-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.member-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.member-card h3 {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+}
+
+a {
+    color: #d4af37;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Our Sponsors</h1>
+    <p>These people are the foundation of our community</p>
+</header>
+
+<section class="hall-container">
+
+    <a href="app.html" class="member-card">
+        <img src="OIP.webp" alt="Member 1">
+        <h3>John Doe: Engineering Coach</h3>
+    </a>
+
+    <a href="app.html" class="member-card">
+        <img src="OIP (1).webp" alt="Member 2">
+        <h3>Anon 101: STEM Professor</h3>
+    </a>
+
+    <a href="app.html" class="member-card">
+        <img src="OIP (2).webp" alt="Member 3">
+        <h3>Daisy Daisy: Professional Football Player</h3>
+    </a>
+
+    <a href="app.html" class="member-card">
+        <img src="1000004790.jpg" alt="Member 4">
+        <h3>Zach</h3>
+    </a>
+
+</section>
+
+<footer>
+    © 2026 Hall of Fame. All Rights Reserved.
+ <nav>
+        <a href="AF.html">Go back?</a>
+    </nav>
+</footer>
+
+</body>
+</html>
